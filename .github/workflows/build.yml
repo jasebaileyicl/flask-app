@@ -1,6 +1,9 @@
 name: Build
 on: [push]
 
+env:
+  SECRET: ${{ secrets.VERCEL_PROJECT_ID }}
+
 
 jobs:
   python-formatting:
@@ -21,8 +24,7 @@ jobs:
     environment: development
     needs: python-formatting
     runs-on: ubuntu-latest
-    env:
-      SECRET: mysecret
+
 
     steps:
       - name: Checkout

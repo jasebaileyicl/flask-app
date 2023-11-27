@@ -1,4 +1,4 @@
-from flask import Flask, redirect, url_for,  render_template
+from flask import Flask, redirect, url_for, render_template
 
 from dotenv import load_dotenv
 import os
@@ -13,7 +13,7 @@ if __name__ == "__main__":
 
 @app.route("/")  # this sets the route to this page
 def home():
-    db_user= os.environ["DB_USER"]
+    db_user = os.environ["DB_USER"]
     return render_template("index.html", text=db_user)
     # return "Hello! this is the main page <h1>HELLO2</h1>"  # some basic inl
 

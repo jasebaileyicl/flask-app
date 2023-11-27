@@ -1,5 +1,6 @@
 name: Build
 on: [push]
+environment: Production
 
 env:
   SECRET: ${{ secrets.VERCEL_PROJECT_ID }}
@@ -21,7 +22,7 @@ jobs:
       run: flake8 api/
 
   deploy-to-vercel:
-    environment: development
+
     needs: python-formatting
     runs-on: ubuntu-latest
 

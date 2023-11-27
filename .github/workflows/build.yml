@@ -2,7 +2,7 @@ name: Build
 on: [push]
 
 env:
-  DAY_OF_WEEK: Monday
+  DB_USER: usegithubsecret
 jobs:
   python-formatting:
    runs-on: ubuntu-latest

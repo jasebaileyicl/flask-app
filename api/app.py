@@ -13,7 +13,7 @@ if __name__ == "__main__":
 
 @app.route("/")  # this sets the route to this page
 def home():
-    db_user = "cccc"
+    db_user = os.environ["SECRET"]  # "cccc"
     return render_template("index.html", text=db_user)
     # return "Hello! this is the main page <h1>HELLO2</h1>"  # some basic inl
 

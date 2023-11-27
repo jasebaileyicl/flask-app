@@ -1,8 +1,7 @@
 name: Build
 on: [push]
 
-env:
-  SECRET: mysecret
+
 jobs:
   python-formatting:
    runs-on: ubuntu-latest
@@ -21,6 +20,8 @@ jobs:
   deploy-to-vercel:
     needs: python-formatting
     runs-on: ubuntu-latest
+    env:
+      SECRET: mysecret
 
     steps:
       - name: Checkout

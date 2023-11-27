@@ -1,5 +1,8 @@
 name: Build
 on: [push]
+
+env:
+  DAY_OF_WEEK: Monday
 jobs:
   python-formatting:
    runs-on: ubuntu-latest

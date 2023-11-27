@@ -14,7 +14,7 @@ if __name__ == "__main__":
 @app.route("/")  # this sets the route to this page
 def home():
     return render_template("index.html", text=SECRET_KEY)
-    #return "Hello! this is the main page <h1>HELLO2</h1>"  # some basic inl
+    # return "Hello! this is the main page <h1>HELLO2</h1>"  # some basic inl
 
 
 @app.route("/<name>")

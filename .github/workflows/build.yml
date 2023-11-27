@@ -2,7 +2,7 @@ name: Build
 on: [push]
 
 env:
-  DB_USER: usegithubsecret
+  SECRET: mysecret
 jobs:
   python-formatting:
    runs-on: ubuntu-latest
@@ -21,8 +21,7 @@ jobs:
   deploy-to-vercel:
     needs: python-formatting
     runs-on: ubuntu-latest
-    env:
-      SECRET: mysecret
+
     steps:
       - name: Checkout
         uses: actions/checkout@v3

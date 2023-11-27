@@ -15,7 +15,7 @@ if __name__ == "__main__":
 def home():
     db_user = os.environ["SECRET"]  # "cccc"
     return render_template("index.html", text=db_user)
-    # xxx return "Hello! this is the main page <h1>HELLO2</h1>"  # some basic inl
+    # xxx return "This is the main page <h1>HELLO2</h1>"
 
 
 @app.route("/<name>")

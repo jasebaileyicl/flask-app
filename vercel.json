@@ -4,5 +4,9 @@
       "source": "/(.*)",
       "destination": "/api/app"
     }
-  ]
+  ],
+  "env": {
+    "mysecret": "this is the value",
+    "SECRET": "@my-secret-name"
+  }
 }

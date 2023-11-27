@@ -1,6 +1,6 @@
 from flask import Flask, redirect, url_for, render_template
 
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 import os
 
 # load_dotenv()

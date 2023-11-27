@@ -1,6 +1,6 @@
 name: Build
 on: [push]
-environment: Production
+
 
 env:
   SECRET: ${{ secrets.VERCEL_PROJECT_ID }}

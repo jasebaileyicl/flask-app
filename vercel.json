@@ -7,6 +7,6 @@
   ],
   "env": {
     "mysecret": "this is the value",
-    "SECRET": "@my-secret-name"
+    "SECRET": "my-secret-name"
   }
 }
